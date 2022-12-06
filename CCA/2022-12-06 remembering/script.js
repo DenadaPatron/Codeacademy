@@ -16,7 +16,7 @@ function musicians(num){
     else if (num == 4) {
         return "kvartetas";
     }
-    else {
+    else if (num == 5) {
         return "didele grupe";
     }
 }
