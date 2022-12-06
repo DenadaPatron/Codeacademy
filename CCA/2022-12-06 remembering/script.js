@@ -1,6 +1,6 @@
 console.log('veikia');
 
-function atsakymas(num){
+function musicians(num){
     if (num <= 0) {
         return "ne grupe";
     }
@@ -21,4 +21,4 @@ function atsakymas(num){
     }
 }
 
-console.log(atsakymas(3));
+console.log(musicians(3));
