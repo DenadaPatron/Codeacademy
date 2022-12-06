@@ -1,0 +1,149 @@
+body {
+  background-color: #f2f2f2;
+  margin-bottom: 600px;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .programs-container {
+  display: flex;
+  column-gap: 30px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.programs-filter {
+  background-color: white;
+  width: 30%;
+  padding: 30px;
+  position: sticky;
+  top: 20px;
+}
+
+.programs-list {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-right: 15px;
+}
+
+.programs-item {
+  background-color: white;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.program-image {
+  height: 97px;
+}
+
+.program-features-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+}
+
+.program-extra {
+  background-color: #ff00e9;
+  color: white;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  padding: 12px 17px 11px;
+  font-size: 11px;
+  position: absolute;
+  top: 20px;
+  right: -15px;
+} */
+
+.color-pink {
+  color: #ff00e9;
+}
+
+.color-black {
+  color: black;
+}
+
+.bg-image {
+  background-image: url("banner.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-color: white;
+  display: block;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 30px;
+}
+
+.programs-container {
+  display: flex;
+  column-gap: 30px;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+.programs-container .programs-filter {
+  background-color: white;
+  width: 30%;
+  padding: 30px;
+  position: sticky;
+  top: 20px;
+}
+
+.programs-container .programs-list {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-right: 15px;
+}
+
+.programs-container .programs-list .programs-item {
+  background-color: white;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.programs-container .programs-list .programs-item .program-content .program-image {
+  height: 97px;
+}
+
+.programs-container .programs-list .programs-item .program-content .program-title {
+  font-size: 30px;
+}
+
+.programs-container .programs-list .programs-item .program-features-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+}
+
+.programs-container .programs-list .programs-item .program-extra {
+  background-color: #ff00e9;
+  color: white;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  padding: 12px 17px 11px;
+  font-size: 11px;
+  position: absolute;
+  top: 20px;
+  right: -15px;
+  max-width: 70px;
+  text-align: center;
+}

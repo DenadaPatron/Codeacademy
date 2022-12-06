@@ -1,0 +1,82 @@
+.container {
+  width: 70%;
+  margin: 30px auto;
+}
+
+.box {
+  border: 2px solid green;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  padding: 30px;
+}
+.wrapper.full-width {
+  width: 100%;
+}
+.wrapper.half-width {
+  width: 50%;
+}
+@media (max-width: 900px) {
+  .wrapper.half-width {
+    width: 100%;
+  }
+}
+.wrapper.bg-dark {
+  background-color: rgb(44, 44, 44);
+}
+@media (max-width: 1100px) {
+  .wrapper.bg-dark {
+    background-color: rgb(183, 35, 35);
+  }
+}
+@media (max-width: 900px) {
+  .wrapper.bg-dark {
+    background-color: green;
+  }
+}
+.wrapper h2 {
+  font-size: 40px;
+}
+.wrapper h2.color-red {
+  color: red;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+.wrapper h2.color-red:hover {
+  color: green;
+}
+.wrapper p {
+  position: relative;
+}
+.wrapper p:before {
+  content: "- ";
+}
+.wrapper p:after {
+  content: "";
+  background: white;
+  width: 10px;
+  height: 50%;
+  display: block;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.wrapper p:not(.transparent) {
+  background-color: bisque;
+  color: black;
+}
+.wrapper p:first-of-type {
+  font-size: 1.5em;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.bg-dark {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

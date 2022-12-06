@@ -1,0 +1,118 @@
+.blue {
+    background-color: blue;
+  }
+  .orange {
+    background-color: orange;
+  }
+  .red {
+    background-color: red;
+  }
+
+  .green{
+    background-color: green;
+  }
+
+  .purple{
+    background-color: purple;
+  }
+
+  .pink{
+    background-color: pink;
+  }
+  .container {
+    background-color: bisque;
+    height: 600px;
+    width: 600px;
+    margin-bottom: 30px;
+  }
+  .container-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container-1 .child {
+    height: 200px;
+  }
+  .container-1 .child:first-of-type {
+    width: 400px;
+  }
+  .container-1 .child:nth-child(2) {
+    width: 200px;
+  }
+  .container-1 .child:nth-child(3) {
+    width: 200px;
+  }
+  .container-1 .child:nth-child(4) {
+    width: 400px;
+  }
+  .container-1 .child:nth-child(5) {
+    width: 400px;
+  }
+  .container-1 .child:nth-child(6) {
+    width: 200px;
+  }
+  .container-2 .child {
+    width: 200px;
+  }
+
+  .container-9{
+    display:flex;
+    opacity: 0.75;
+  }
+
+  .container-9 .inner-container{
+    width: 50%;
+  }
+  .container-9 .inner-container:first-child{
+    width:40%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-9 .inner-container:last-child{
+    width: 60%;
+  }
+  .container-9 .inner-container:first-child .child:nth-child(1){
+    height: 50%;
+    width: 100%;
+  }
+
+  .container-9 .inner-container:first-child .child:nth-child(2),
+  .container-9 .inner-container:first-child .child:nth-child(3){
+    height: calc(50% / 3);
+    width: 50%;
+  }
+
+  .container-9 .inner-container:first-child .child:nth-child(4){
+    height: calc(50% / 3 * 2);
+    width: 100%;
+  }
+
+  .container-9 .inner-container:last-child{
+    display:flex;
+    flex-wrap: wrap;
+  }
+
+  .container-9 .inner-container:last-child .child:nth-child(1),
+  .container-9 .inner-container:last-child .child:nth-child(2),
+  .container-9 .inner-container:last-child .child:nth-child(3){
+  width: calc(100% / 3);
+  height: calc( 50% / 3 );
+  }
+
+  .container-9 .inner-container:last-child .child:nth-child(4){
+    width: 100%;
+    height:50%;
+  }
+
+  .container-9 .inner-container:last-child .child:nth-child(5){
+    height: calc(50% / 3 * 2);
+    width: calc(100% / 3 * 2);
+  }
+  .container-9 .inner-container:last-child .child:nth-child(6){
+    height: calc((100% - 50%) / 3 * 2);
+    width: calc(100% / 3);
+  }
+
+  .container-9 .inner-container:last-child .child:nth-child(6) .inner-child{
+    height: 50%;
+  }

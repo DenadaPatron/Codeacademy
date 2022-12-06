@@ -1,0 +1,45 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EDF2F8;
+}
+
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 20px;
+}
+
+.child {
+  background-color: #FFFFFF;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.child:nth-of-type(5n+1) {
+  background-color: #733FC8;
+  color: white;
+  grid-column-end: span 2;
+}
+
+.child:nth-of-type(5n+2) {
+  background-color: #48566B;
+  color: white;
+}
+
+.child:nth-of-type(5n+3) {
+  grid-row-end: span 2;
+}
+
+.child:nth-of-type(5n+5) {
+  background-color: #18202D;
+  color: white;
+  grid-column-end: span 2;
+}
+

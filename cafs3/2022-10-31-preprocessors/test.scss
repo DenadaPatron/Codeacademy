@@ -1,0 +1,10 @@
+@import 'scss/variables';
+@import 'scss/responsive';
+
+h1 {
+  color: $color-green;
+
+  @include xl {
+    color: $color-red;
+  }
+}

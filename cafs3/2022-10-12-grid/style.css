@@ -1,0 +1,260 @@
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.purple {
+  background-color: purple;
+}
+
+/* CSS FLEXBOX */
+.flex-wrapper .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-wrapper .container > .child,
+.flex-wrapper .container .inner-container {
+  height: 200px;
+  width: 50%;
+}
+
+.flex-wrapper .container .inner-container:nth-child(1) .child {
+  height: 50%;
+}
+
+.flex-wrapper .container .inner-container:nth-child(4) {
+  display: flex;
+}
+
+.flex-wrapper .container .inner-container:nth-child(4) .child {
+  height: 100%;
+  width: 50%;
+}
+
+/* CSS GRID */
+.grid-wrapper .container {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 100px 100px 200px;
+}
+
+.grid-wrapper .container .child:nth-child(1) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.grid-wrapper .container .child:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.grid-wrapper .container .child:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.grid-wrapper .container .child:nth-child(4) {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.grid-wrapper .container .child:nth-child(5) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.grid-wrapper .container .child:nth-child(6) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+
+
+.grid-wrapper-2 .container {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  grid-template-rows: 100px 100px 200px;
+}
+
+.grid-wrapper-2 .container .child:nth-child(1) {
+  /* grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4; */
+
+  /* grid-column: 3 / 4; */
+  grid-column: 3;
+  /* grid-row: 3 / 4; */
+  grid-row: 3;
+}
+
+.grid-wrapper-2 .container .child:nth-child(2) {
+  /* grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4; */
+
+  /* grid-column: 1 / 2; */
+  grid-column: 1;
+  /* grid-row: 3 / 4; */
+  grid-row: 3;
+}
+
+.grid-wrapper-2 .container .child:nth-child(3) {
+  /* grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2; */
+
+  /* grid-column: 1 / 2; */
+  grid-column-end: 2;
+  /* grid-row: 1 / 2; */
+  grid-row-end: 2;
+}
+
+.grid-wrapper-2 .container .child:nth-child(4) {
+  /* grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3; */
+
+  /* grid-column: 2 / 4;
+  grid-row: 1 / 3; */
+
+  grid-area: 1 / 2 / 3 / 4;
+}
+
+.grid-wrapper-2 .container .child:nth-child(5) {
+  /* grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3; */
+
+  /* grid-column: 1 / 2;
+  grid-row: 2 / 3; */
+
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.grid-wrapper-2 .container .child:nth-child(6) {
+  /* grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4; */
+
+  /* grid-column: 2 / 3;
+  grid-row: 3 / 4; */
+  
+  grid-area: 3 / 2;
+}
+
+
+
+/* GRID 3 (named) */
+.grid-wrapper-3-named .container {
+  display: grid;
+  grid-template-columns: [first-line] 1fr [second-line] 1fr [third-line] 1fr [fourth-line] 1fr [fifth-line];
+  grid-template-rows: [line logo-row-start] 100px [line logo-row-end] 100px [line] 100px [line] 100px [line];
+  /* row-gap: 15px; */
+  /* column-gap: 15px; */
+  gap: 15px;
+}
+
+.grid-wrapper-3-named .container .child:nth-child(1) {
+  grid-column-start: first-line;
+  grid-column-end: third-line;
+  /* grid-row-start: line 1;
+  grid-row-end: line 2; */
+  grid-row: logo-row-start / logo-row-end;
+}
+
+.grid-wrapper-3-named .container .child:nth-child(2) {
+  grid-column: first-line / third-line;
+  grid-row: line 3 / line 5;
+}
+
+.grid-wrapper-3-named .container .child:nth-child(3) {
+  grid-column: fourth-line / fifth-line;
+  grid-row: line 3 / line 5;
+}
+
+.grid-wrapper-3-named .container .child:nth-child(4) {
+  grid-column: third-line / fifth-line;
+  grid-row: line 1 / line 3;
+}
+
+.grid-wrapper-3-named .container .child:nth-child(5) {
+  grid-column: first-line / third-line;
+  grid-row: line 2 / line 3;
+}
+
+.grid-wrapper-3-named .container .child:nth-child(6) {
+  grid-column: third-line / fourth-line;
+  grid-row: line 3 / line 5;
+}
+
+
+/* GRID 4 */
+.grid-wrapper-4 .container {
+  display: grid;
+  grid-template-columns: 20px repeat(4, 1fr) 20px;
+  grid-template-rows: repeat(2, 100px) 50px repeat(2, 100px);
+  grid-template-areas: ".    .     green   orange   orange   ."
+                       ".    pink  .       orange   orange   ."
+                       ".    .     .       .        .        ."
+                       ".    red   red     purple   blue     ."
+                       ".    red   red     purple   blue     .";
+}
+
+.grid-wrapper-4 .container .child:nth-child(1) {
+  grid-area: green;
+}
+
+.grid-wrapper-4 .container .child:nth-child(2) {
+  grid-area: red;
+}
+
+.grid-wrapper-4 .container .child:nth-child(3) {
+  grid-area: blue;
+}
+
+.grid-wrapper-4 .container .child:nth-child(4) {
+  grid-area: orange;
+}
+
+.grid-wrapper-4 .container .child:nth-child(5) {
+  grid-area: pink;
+  grid-column: 2 / span 3;
+}
+
+.grid-wrapper-4 .container .child:nth-child(6) {
+  grid-area: purple;
+}

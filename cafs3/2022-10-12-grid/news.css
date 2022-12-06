@@ -1,0 +1,167 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-wrapper {
+  height: 250px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.news-article {
+  width: 50%;
+  background-color: white;
+}
+
+.main-news {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.info-wrapper {
+  padding: 30px;
+}
+
+.secondary-news {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.secondary-news .news-article {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  background-color: unset;
+  column-gap: 30px;
+}
+
+.secondary-news .info-wrapper {
+  padding: 0;
+}
+
+.secondary-news .image-wrapper {
+  height: 80px;
+}
+
+.large-link {
+  background-color: white;
+  display: block;
+  padding: 30px;
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.podcast-item {
+  display: grid;
+  grid-template-columns: 70px 1fr 70px;
+  grid-template-rows: 70px auto;
+  grid-template-areas:
+      "image length play"
+      "content content content";
+}
+
+.podcast-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: image;
+}
+
+.podcast-time {
+  grid-area: length;
+  background-color: black;
+  color: white;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+  place-items: center;
+}
+
+.podcast-play {
+  grid-area: play;
+  background-color: white;
+}
+
+.podcast-info {
+  grid-area: content;
+  background-color: white;
+  padding: 15px;
+}
+
+.podcast-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.event-image {
+  width: 100%;
+  display: block;
+}
+
+.event-info {
+  background-color: black;
+  color: white;
+  padding: 60px 20px 20px;
+  position: relative;
+}
+
+.event-title {
+  margin: 0;
+}
+
+.event-date {
+  width: 70px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  top: -40px;
+}
+
+.event-day {
+  background-color: white;
+  color: black;
+  font-size: 30px;
+  padding: 7px;
+}
+
+.event-month {
+  background-color: #ff00e9;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.event-item {
+  margin-bottom: 70px;
+}
+
+.news {
+  width: 60%;
+}
+
+.sidebar {
+  width: 40%;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 30px;
+}

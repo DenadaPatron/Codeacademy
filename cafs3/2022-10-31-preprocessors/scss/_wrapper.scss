@@ -1,0 +1,70 @@
+.wrapper {
+  padding: $sizing-30;
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.half-width {
+    width: 50%;
+
+    @include md {
+      width: 100%;
+    }
+  }
+
+  &.bg-dark {
+    background-color: rgb(44, 44, 44);
+
+    @include xl {
+      background-color: rgb(183, 35, 35);
+    }
+
+    @include md {
+      background-color: green;
+    }
+  }
+
+  h2 {
+    font-size: 40px;
+
+    &.color-red {
+      color: $color-red;
+      cursor: pointer;
+      transition: color 0.5s ease-in-out;
+
+      &:hover {
+        color: $color-green;
+      }
+    }
+  }
+
+  p {
+    position: relative;
+    
+    &:before {
+      content: '- ';
+    }
+
+    &:after {
+      content: '';
+      background: white;
+      width: 10px;
+      height: 50%;
+      display: block;
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    &:not(.transparent) {
+      background-color: bisque;
+      color: $color-black;
+    }
+
+    &:first-of-type {
+      font-size: 1.5em;
+    }
+  }
+}

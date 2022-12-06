@@ -1,0 +1,53 @@
+body{
+    background-color: wheat;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.post-card-main{
+ background-color: white;
+ width:300px;
+
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.post-card-image{
+    height:70%;
+}
+
+.post-card-info{
+    margin: 20px 20px;
+}
+
+.post-card-category{
+    text-transform: uppercase;
+    color: #1200ff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 12px;
+}
+
+h2{
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-bottom: 11px;
+}
+
+.post-card-date{
+    color:rgb(79, 79, 79);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+.post-card-secondary{
+    
+    display:flex
+
+}

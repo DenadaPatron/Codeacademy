@@ -1,0 +1,284 @@
+:root {
+  --color-primary: rgb(125, 24, 180);
+  --color-secondary: rgb(0, 4, 128);
+  --color-danger: red;
+  --color-success: green;
+
+  --color-primary-active: rgb(70, 12, 102);
+  --color-secondary-active: rgb(0, 2, 53);
+  --color-danger-active: rgb(183, 0, 0);
+  --color-success-active: rgb(0, 78, 0);
+
+  --color-white: white;
+}
+
+/* button {
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid rgb(180, 24, 121);
+  font-weight: 700;
+  font-size: 16px;
+  background-color: rgb(180, 24, 121);
+  color: white;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: rgb(180, 24, 121);
+}
+
+a {
+  text-transform: uppercase;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid rgb(180, 24, 121);
+  font-weight: 700;
+  font-size: 16px;
+  background-color: rgb(180, 24, 121);
+  color: white;
+
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}
+
+a:hover {
+  background-color: white;
+  color: rgb(180, 24, 121);
+} */
+
+
+/* ANTRAS BŪDAS */
+/* button,
+a.button {
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  border: 2px solid rgb(180, 24, 121);
+  font-weight: 700;
+  font-size: 16px;
+  background-color: rgb(180, 24, 121);
+  color: white;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in, ease-in-out;
+  transition-delay: 0s, 2s;
+
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
+}
+
+button {
+  cursor: pointer;
+}
+
+a.button {
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  text-align: center;
+}
+
+button:hover,
+a.button:hover {
+  background-color: white;
+  color: rgb(180, 24, 121);
+} */
+
+
+/* TREČIAS BŪDAS */
+/* .button {
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  font-weight: 700;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  text-align: center;
+}
+
+.button-primary {
+  border-color: var(--color-primary);
+}
+
+.button-primary.button-fill {
+  background-color: var(--color-primary);
+}
+
+.button-primary.button-fill:hover {
+  color: var(--color-primary);
+}
+
+.button-primary.button-outline {
+  color: var(--color-primary);
+}
+
+.button-primary.button-outline:hover {
+  background-color: var(--color-primary);
+}
+
+.button-secondary {
+  border-color: var(--color-secondary);
+}
+
+.button-secondary.button-fill {
+  background-color: var(--color-secondary);
+}
+
+.button-secondary.button-fill:hover {
+  color: var(--color-secondary);
+}
+
+.button-secondary.button-outline {
+  color: var(--color-secondary);
+}
+
+.button-secondary.button-outline:hover {
+  background-color: var(--color-secondary);
+}
+
+.button-danger {
+  border-color: var(--color-danger);
+}
+
+.button-danger.button-fill {
+  background-color: var(--color-danger);
+}
+
+.button-danger.button-fill:hover {
+  color: var(--color-danger);
+}
+
+.button-danger.button-outline {
+  color: var(--color-danger);
+}
+
+.button-danger.button-outline:hover {
+  background-color: var(--color-danger);
+}
+
+.button-fill {
+  color: var(--color-white);
+}
+
+.button-fill:hover {
+  background-color: transparent;
+}
+
+.button-outline {
+  background-color: transparent;
+}
+
+.button-outline:hover {
+  color: var(--color-white);
+} */
+
+
+
+h1 {
+  color: var(--color-primary);
+}
+
+
+
+
+.button-primary {
+  --local-color: var(--color-primary);
+  --local-color-active: var(--color-primary-active);
+}
+
+.button-secondary {
+  --local-color: var(--color-secondary);
+  --local-color-active: var(--color-secondary-active);
+}
+
+.button-danger {
+  --local-color: var(--color-danger);
+  --local-color-active: var(--color-danger-active);
+}
+
+.button-success {
+  --local-color: var(--color-success);
+  --local-color-active: var(--color-success-active);
+}
+
+.button {
+  text-transform: uppercase;
+  padding: 10px 15px;
+  margin-bottom: 7px;
+  border-radius: 10px;
+  border: 2px solid var(--local-color);
+  font-weight: 700;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  text-align: center;
+}
+
+.button-fill,
+.button-outline:hover {
+  color: var(--color-white);
+  background-color: var(--local-color);
+}
+
+.button-outline,
+.button-fill:hover {
+  background-color: transparent;
+  color: var(--local-color);
+}
+
+.button:active {
+  border-color: var(--local-color-active);
+}
+
+.button-outline:active {
+  background-color: var(--local-color-active);
+}
+
+.button-fill:active {
+  color: var(--local-color-active);
+}
+
+
+
+
+.posts-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.post {
+  transition: box-shadow 0.5s;
+  padding: 15px;
+  text-align: center;
+}
+
+.post:hover {
+  box-shadow: 0px 2px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+  transition: color 0.5s, padding 0.5s;
+  background-color: lightblue;
+  padding-right: 10px;
+  padding-left: 0;
+}
+
+.post:hover h2 {
+  color: var(--color-primary);
+  padding-left: 10px;
+  padding-right: 0;
+}

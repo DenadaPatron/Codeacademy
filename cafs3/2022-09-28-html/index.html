@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mano pirmasis puslapis</title>
+  <style>
+    h2 {
+      color: blue;
+      font-size: 40px;
+    }
+  </style>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 
+    Block tipo HTML elementai:
+    1. Prasideda naujoje eilutėje.
+    2. Užima pilna tėvinio elemento plotį.
+   -->
+
+  <!-- Pavadinimai -->
+  <h1 style="color: orange; font-size: 50px;">Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <h4 class="color-red">Heading 4</h4>
+  <h5 class="color-red">Heading 5</h5>
+  <h6>Heading 6</h6>
+
+  <div id="element-id">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  </div>
+
+  <!-- Paragrafas -->
+  <p><dfn>HTML</dfn> <b><i><mark><u>Lorem ipsum</u></mark></i></b> dolor sit amet consectetur <em>adipisicing elit</em>. Eius laboriosam nostrum voluptatum? Distinctio cum pariatur <strong>obcaecati</strong> hic architecto quis <br>recusandae error aperiam at. Ducimus, laboriosam quo doloremque distinctio quod, nihil a repellendus <b>similique autem earum dolores debitis</b> modi sapiente assumenda consequuntur <mark>exercitationem</mark>. Quos minima magnam odio <span>aperiam animi</span> harum <i>nostrum</i>.</p>
+
+  <hr>
+  
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, reprehenderit.</p>
+
+  <!-- 
+    1. Visi ol ir ul elementų vaikiniai elementai privalo būti li elementai
+    2. li elementai yra naudojami TIK kaip ul ar ol elementų vaikiniai elementai
+   -->
+
+  <!-- Ordered List - numeruotas sąrašas -->
+  <ol>
+    <li class="color-red">Pirma</li>
+    <li>Antras</li>
+    <li>Trečias</li>
+  </ol>
+
+  <!-- Unordered List - nenumeruotas sąrašas -->
+  <ul>
+    <li>Vienas</li>
+    <li>Du</li>
+    <li>Trys</li>
+  </ul>
+
+  <!-- Inline tipo HTML elementai -->
+  <button>Click Me</button>
+  <a href="https://www.google.com" target="_blank"><b>Nuoroda</b> į išorinį puslapį</a>
+  <a href="/shop.html">Nuoroda šiame puslapyje</a>
+  <a href="tel:+370456465464">Call Now</a>
+  <a href="#element-id">Test</a>
+
+  <a href="https://www.google.com" target="_blank">
+    <img src="https://dogtime.com/assets/uploads/2018/10/puppies-cover.jpg" alt="Golden Puppy" height="300">
+  </a>
+
+  <img src="/cat.jpg" width="150">
+
+  <label for="">Name</label>
+  <input type="text">
+
+  <input type="color">
+  <input type="date">
+  <input type="checkbox">
+  <input type="radio">
+  <input type="password">
+  <input type="range">
+
+  <select>
+    <option>Vienas</option>
+    <option>Du</option>
+    <option>Trys</option>
+  </select>
+
+  <textarea>Labas</textarea>
+</body>
+</html>

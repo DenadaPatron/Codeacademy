@@ -1,0 +1,90 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* DESKTOP FIRST pavyzdys */
+/* .container {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  width: 70%;
+}
+
+@media (max-width: 799px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 499px) {
+  .container {
+    font-size: 16px;
+    background-color: purple;
+  }
+}
+
+@media (max-width: 299px) {
+  .container {
+    background-color: pink;
+    color: black;
+  }
+} */
+
+
+/* MOBILE FIRST pavyzdys */
+.container {
+  background-color: pink;
+}
+
+@media (min-width: 300px) {
+  .container {
+    background-color: purple;
+    color: white;
+  }
+}
+
+@media (min-width: 500px) {
+  .container {
+    font-size: 20px;
+    background-color: green;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 70%;
+    padding: 20px;
+  }
+}
+
+
+
+
+
+/* DESKTOP FIRST pavyzdys */
+@media (max-width: 799px) {
+
+}
+
+@media (max-width: 499px) {
+
+}
+
+@media (max-width: 299px) {
+
+}
+
+/* MOBILE FIRST pavyzdys */
+@media (min-width: 300px) {
+
+}
+
+@media (min-width: 500px) {
+
+}
+
+@media (min-width: 800px) {
+
+}

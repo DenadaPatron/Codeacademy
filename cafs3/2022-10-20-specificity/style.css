@@ -1,0 +1,51 @@
+h1 {
+  color: red !important;
+}
+
+#header-id#header-id {
+  color: pink;
+}
+
+html head + body h1#header-id.header {
+  color: blue;
+}
+
+h1#header-id.header {
+  color: orange;
+}
+
+h1#header-id {
+  color: red;
+}
+
+#header-id {
+  color: green;
+}
+
+html head + body h1.header {
+  color: aqua;
+}
+
+html body h1.header {
+  color: purple;
+}
+
+body h1.header {
+  color: orange;
+}
+
+h1.header {
+  color: pink;
+}
+
+.header {
+  color: blue;
+}
+
+h1 {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
