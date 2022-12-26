@@ -1,24 +1,26 @@
 console.log('veikia');
 
+let answer = "Didele grupe";
+
 function musicians(num){
     if (num <= 0) {
-        return "ne grupe";
+        answer = "ne grupe";
     }
     else if (num == 1) {
-        return "solo";
+        answer =  "solo";
     }
     else if (num == 2) {
-        return "duetas";
+        answer = "duetas";
     }
     else if (num == 3) {
-        return "trio;"
+        answer = "trio;"
     }
     else if (num == 4) {
-        return "kvartetas";
+        answer = "kvartetas";
     }
     else if (num == 5) {
-        return "didele grupe";
+        answer = "didele grupe";
     }
 }
-
-console.log(musicians(3));
+function musicians (3);
+console.log(answer);
