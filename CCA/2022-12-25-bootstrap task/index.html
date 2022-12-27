@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="script.js"></script>
+    
     <title>Document</title>
 </head>
 <body>
@@ -31,13 +31,13 @@
                 <div class="input-group">
                     <input type="text" class="form-control" id="registry-changer" placeholder="Fill me in">
                     <button class="btn btn-outline-secondary" id="upper-case">To Upper Case</button>
-                    <button class="btn btn-outline-secondary">To Lower Case</button>
-                    <button class="btn btn-outline-secondary">First Upper Case</button>
-                    <button class="btn btn-outline-secondary">First Lower Case</button>
+                    <button class="btn btn-outline-secondary" id="lower-case">To Lower Case</button>
+                    <button class="btn btn-outline-secondary" id="first-upper-case">First Upper Case</button>
+                    <button class="btn btn-outline-secondary" id="first-lower-case">First Lower Case</button>
                 </div>
             </div>
         </div>
-
+<!-- Email & Number check-up -->
         <div class="card mb-4 box-shadow">
             <div class="card-header">
                 <p>Paspaudus mygtuka, patikrinti reiksmes:</p>
@@ -54,9 +54,9 @@
                     </div>
 
                     <div class="col-10">
-                        <input type="email" placeholder="Enter Email" id="insertEmail" class="form-control">
+                        <input type="email" placeholder="Enter Email" id="input-email" class="form-control">
                             <div class="my-4 ">
-                                <p class="my-1 text-danger" id="validateEmail" hidden>Please check email</p>
+                                <p class="my-1 text-danger" id="validate-email" hidden>Please check email</p>
                             </div>
                     </div>
                 </div>
@@ -67,50 +67,50 @@
                     </div>
                     
                     <div class="col-10">
-                        <input type="tel" placeholder="+370 600 12355" id="insertEmail" class="form-control">
+                        <input type="tel" placeholder="+370 600 12355" id="input-number" class="form-control">
                             <div class="my-4">
-                                <p class="my-1 text-danger" id="validateEmail" hidden>Please check phone number</p>
+                                <p class="my-1 text-danger" id="validate-number" hidden>Please check phone number</p>
                             </div>
                     </div>
 
                     <div>
-                        <button type="button" class="btn btn-outline-dark">Save</button>
+                        <button type="button" class="btn btn-outline-dark" id="save-button">Save</button>
                     </div>
                 </div>
             </div>
 
         </div>
-
+<!-- Block & Unblock field  -->
         <div class="card mb-4 bow-shadow">
             <div class="card-header">
-                <p>Paspaudus mygtuka uzblokuokite/atblokuokite <code> input </code></p>
+                <p>Paspaudus mygtuka uzblokuokite/atblokuokite <code>input</code></p>
             </div>
 
 
             <div class="card-body">
                 <div class="input-group">
-                    <button class="btn btn-outline-success">Block</button>
-                    <input type="text" placeholder="I'm input! You can try to enter something..." class="form-control"> 
-                    <button class="btn btn-outline-danger">Unblock</button>   
+                    <button class="btn btn-outline-success" id="block-button">Block</button>
+                    <input type="text" id="input" placeholder="I'm input! You can try to enter something..." class="form-control"> 
+                    <button class="btn btn-outline-danger" id="unblock-button">Unblock</button>   
                 </div>
             </div>
         </div>
-
+<!-- Image changer  -->
         <div class="card mb-4 bow-shadow">
             <div class="card-header">
                 <p>Uzvedus ant paveiksliuko pakeiskite ji</p>
                 <ul>
-                    <li><a href="https://i.imgur.com/PLDVxza.jpg" alt="">https://i.imgur.com/PLDVxza.jpg</a></li>
-                    <li><a href="https://i.imgur.com/0DElr0H.jpg">https://i.imgur.com/0DElr0H.jpg</a></li>
+                    <li><a id="image-one" href="https://i.imgur.com/PLDVxza.jpg" alt="">https://i.imgur.com/PLDVxza.jpg</a></li>
+                    <li><a id="image-two" href="https://i.imgur.com/0DElr0H.jpg">https://i.imgur.com/0DElr0H.jpg</a></li>
                 </ul>
             </div>
 
             <div class="card-body text-center">
-                <img width="220" height="220" src="https://i.imgur.com/PLDVxza.jpg" referrerpolicy="no-referrer">
+                <img width="220" height="220" src="https://i.imgur.com/PLDVxza.jpg" referrerpolicy="no-referrer" id="image-frame">
             </div>
 
         </div>
-
+<!-- Quote Changer -->
         <div class="card mb-4 bow-shadow">
             <div class="card-header">
                 <p>Paspaudus ant mygtuko turi iskristi meniu su punktais. Paspaudus punkta turi ivykti veiksmas</p>
@@ -118,7 +118,7 @@
 
             <div class="card-body">
                 <!-- class="text-right" doesn't work for some reason -->
-                <blockquote class="blockquote">
+                <blockquote class="blockquote" id="quote">
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                     <p class="blockquote-footer">Someone famous in Source Title</p>
                 </blockquote>
@@ -128,13 +128,13 @@
                     <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">pointer</a></li>
-                      <li><a class="dropdown-item" href="#">text</a></li>
-                      <li><a class="dropdown-item" href="#">copy</a></li>
-                      <li><a class="dropdown-item" href="#">foo</a></li>
-                      <li><a class="dropdown-item" href="#">help</a></li>
-                      <li><a class="dropdown-item" href="#">crosshair</a></li>
+                    <ul class="dropdown-menu" id="cursor-dropdown">
+                      <li><a class="dropdown-item" value="pointer">pointer</a></li>
+                      <li><a class="dropdown-item" value="text">text</a></li>
+                      <li><a class="dropdown-item" value="copy">copy</a></li>
+                      <li><a class="dropdown-item" value="foo">foo</a></li>
+                      <li><a class="dropdown-item" value="help">help</a></li>
+                      <li><a class="dropdown-item" value="crosshair">crosshair</a></li>
                     </ul>
                 </div>
                 
@@ -143,10 +143,10 @@
                     <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Red</a></li>
-                      <li><a class="dropdown-item" href="#">Green</a></li>
-                      <li><a class="dropdown-item" href="#">Blue</a></li>
+                    <ul class="dropdown-menu" id="color-dropdown">
+                      <li><a class="dropdown-item" value="red">Red</a></li>
+                      <li><a class="dropdown-item" value="green">Green</a></li>
+                      <li><a class="dropdown-item" value="blue">Blue</a></li>
                     </ul>
                 </div>
 
@@ -155,18 +155,17 @@
                     <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="visually-hidden">Toggle Dropdown</span>
                     </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Red</a></li>
-                      <li><a class="dropdown-item" href="#">Green</a></li>
-                      <li><a class="dropdown-item" href="#">Blue</a></li>
+                    <ul class="dropdown-menu" id="border-dropdown">
+                      <li><a class="dropdown-item" value="red">Red</a></li>
+                      <li><a class="dropdown-item" value="green">Green</a></li>
+                      <li><a class="dropdown-item" value="blue">Blue</a></li>
                     </ul>
                 </div>
 
-                <button class="btn btn-success">Reset all</button>
+                <button class="btn btn-success" id="reset-button">Reset all</button>
 
             </div>
         </div>
-
         <div class="card mb-4 box-shadow">
             <div class="card-header">
                 <p>Paspaudus mygtuka parodykite informacija apie save modaliniame lange</p>
@@ -201,6 +200,8 @@
             
         </div>
     </div>
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
